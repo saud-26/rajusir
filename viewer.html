@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        model-viewer {
+            width: 95%;
+            max-width: 900px;
+            height: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive 3D Glasses</h1>
+
+    <model-viewer 
+        src="rajusir1.glb"
+        alt="A 3D model of black eyeglasses"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        environment-image="neutral">
+    </model-viewer>
+
+</body>
+</html>
